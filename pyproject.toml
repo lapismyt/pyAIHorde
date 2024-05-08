@@ -10,7 +10,7 @@ authors = [
     {name = "LapisMYT (Nikita Gavrilin)", email = "nikitagavrilin005@gmail.com"}
 ]
 readme = "README.md"
-classifiers = ["Development Status :: 4 - Alpha",
+classifiers = ["Development Status :: 4 - Beta",
               "Framework :: aiohttp",
               "Intended Audience :: Developers",
               "Programming Language :: Python :: 3.10",
