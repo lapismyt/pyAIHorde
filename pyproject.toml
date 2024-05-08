@@ -9,7 +9,8 @@ description = "Python client for AI Horde API"
 authors = [
     {
         name = "LapisMYT (Nikita Gavrilin)",
-        email = "nikitagavrilin005@gmail.com"}
+        email = "nikitagavrilin005@gmail.com"
+    }
 ]
 requires_python = ">=3.10"
 readme = "README.md"
