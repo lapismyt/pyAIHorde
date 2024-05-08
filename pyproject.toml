@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "aihorde"
 version = "0.1"
 description = "Python client for AI Horde API"
-authors = [{"name": "LapisMYT (Nikita Gavrilin)", "email": "nikitagavrilin005@gmail.com"}]
+authors = [{"name" = "LapisMYT (Nikita Gavrilin)", "email" = "nikitagavrilin005@gmail.com"}]
 requires_python = ">=3.10"
 readme = "README.md"
 classifiers = ["Development Status :: 4 - Alpha",
