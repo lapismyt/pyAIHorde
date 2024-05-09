@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "aihorde"
-version = "0.1"
+version = "0.2"
 description = "Python client for AI Horde API"
 authors = [
     {name = "LapisMYT (Nikita Gavrilin)", email = "nikitagavrilin005@gmail.com"}
