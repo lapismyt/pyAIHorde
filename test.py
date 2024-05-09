@@ -5,7 +5,7 @@ from aihorde import models
 API_KEY = '0000000000'
 
 async def text():
-    q = input('Введите запрос: ')
+    q = input('Enter your prompt: ')
     client = AIHordeClient(API_KEY)
     params = models.ModelGenerationInputKobold(
         stop_sequence=['Human:'],
@@ -21,7 +21,7 @@ async def text():
         print(result.text.strip())
 
 async def image():
-    q = input('Введите запрос: ')
+    q = input('Enter your prompt: ')
     client = AIHordeClient(API_KEY)
     generation_input = models.GenerationInputStable(
         q,
