@@ -33,5 +33,10 @@ async def image():
     for generation in generations:
         print(f'{generation.model}: {generation.img}')
 
+async def models():
+    client = AIHordeClient(API_KEY)
+    models = await client.get_models()
+    print(repr(models[0]))
+
 if __name__ == '__main__':
-    asyncio.run(text())
+    asyncio.run(models())

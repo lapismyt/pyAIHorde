@@ -1,7 +1,12 @@
 # Async Python client library for AI Horde
 
-## Usage examples:
-Here you can find some usage examples of library
+## Installation:
+Warning: supports only Python 3.11 or later
+```bash
+python3.11 -m pip install aihorde
+```
+
+## Usage examples
 
 ### Image generation
 ```python
@@ -54,3 +59,18 @@ async def text():
 asyncio.run(text())
 ```
 
+### Get active models list
+```python
+import asyncio
+from aihorde.client import AIHordeClient
+from aihorde import models
+
+API_KEY = '0000000000' # Your API key from aihorde.net/register. You can also use 0000000000.
+
+async def models():
+    client = AIHordeClient(API_KEY)
+    active_models: list[models.ActiveModel] = await client.get_models(type='image') # or 'text'
+    print(repr(active_models))
+
+asyncio.run(models())
+```
