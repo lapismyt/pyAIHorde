@@ -51,13 +51,13 @@ class AIHordeClient:
 
     async def generate_images(
         self, request: models.GenerationInputStable
-    ) -> list[models.GenerationStable]:
+    ) -> models.RequestStatusStable:
         resp: models.RequestAsync = await self.generate_image_request(request)
         request_id = resp.id
         while True:
             status = await self.image_generation_status(request_id)
             if status.done:
-                return status.generations
+                return status
             else:
                 await asyncio.sleep(int(status.wait_time / 1.5))
     
@@ -77,13 +77,13 @@ class AIHordeClient:
     
     async def generate_text(
         self, request: models.GenerationInputKobold
-    ) -> list[models.GenerationKobold]:
+    ) -> models.RequestStatusKobold:
         resp: models.RequestAsync = await self.generate_text_request(request)
         request_id = resp.id
         while True:
             status = await self.text_generation_status(request_id)
             if status.done:
-                return status.generations
+                return status
             else:
                 await asyncio.sleep(int(status.wait_time / 1.5))
     
