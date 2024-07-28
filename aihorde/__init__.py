@@ -1,1 +1,2 @@
-__version__: str = '0.2'
+from aihorde.client import AIHordeClient
+__version__: str = '0.3'

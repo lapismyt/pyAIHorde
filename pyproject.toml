@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "aihorde"
-version = "0.3"
+version = "0.4"
 description = "Python client for AI Horde API"
 dependencies = ["aiohttp", "msgspec"]
 authors = [
