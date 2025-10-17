@@ -17,7 +17,7 @@ from aihorde import models
 API_KEY = '0000000000' # Your API key from aihorde.net/register. You can also use 0000000000.
 
 async def image():
-    q = input('Введите запрос: ')
+    q = input('Enter your query: ')
     client = AIHordeClient(API_KEY)
     generation_input = models.GenerationInputStable(
         q,
@@ -41,7 +41,7 @@ from aihorde import models
 API_KEY = '0000000000' # Your API key from aihorde.net/register. You can also use 0000000000.
 
 async def text():
-    q = input('Введите запрос: ')
+    q = input('Enter your query: ')
     client = AIHordeClient(API_KEY)
     params = models.ModelGenerationInputKobold(
         stop_sequence=['Human:'],
